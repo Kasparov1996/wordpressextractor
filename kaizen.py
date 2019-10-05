@@ -1,5 +1,5 @@
 # Simple Data Extractor
-# Thanks to @tester2009 
+# Powered By @tester2009 
 import getopt, sys, os, json, urllib2
 from urlparse import urlparse
 
@@ -29,7 +29,7 @@ def main():
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hu:v", ["url=", "version", "help"])
     except getopt.GetoptError as err:
-        print str(err)  # will print something like "option -a not recognized"
+        print str(err)  
         sys.exit(2)
     for o, a in opts:
         if o in ("-u", "--url"):
@@ -54,7 +54,7 @@ def main():
         elif o in ("-v", "--version"):
             print "Data Extractor"
             print "Version 1.2"
-            print "by https://fb.com/Kasparov1996"
+            print "by https://facebook.com/NotKaizen"
         elif o in ("-h", "--help"):
             os.system('cls' if os.name == 'nt' else 'clear')
             print "Data Extractor"
